@@ -48,7 +48,7 @@ if (pinAnswer.pin === myPin) {
             }
             else {
                 myBalance -= amountAns.fastCash;
-                console.log(chalk.green.bold("\nWithDraw Successful.\nYour New balance is: \n" + myBalance));
+                console.log(chalk.green.bold("\nWithDraw Successful.Your New balance is: " + (chalk.greenBright.underline(myBalance)) + "\n"));
                 console.log("\nThank you for using Danyal - ATM\n");
             }
         }
@@ -65,7 +65,7 @@ if (pinAnswer.pin === myPin) {
             }
             else {
                 myBalance -= amountAns.amount;
-                console.log(chalk.green.bold("WithDraw Successful.Your New balance is: " + myBalance));
+                console.log(chalk.green.bold.underline("WithDraw Successful.Your New balance is: " + myBalance));
                 console.log("\nThank you for using Danyal - ATM\n");
             }
         }
