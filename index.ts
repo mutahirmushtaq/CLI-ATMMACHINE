@@ -33,14 +33,14 @@ if (pinAnswer.pin === myPin) {
     }
 ])
 
-// Withdrawel Method.
+// Withdrawal Method.
 
  if (operationAns.operation === "Withdraw") {
     let withdrawAns = await inquirer.prompt([
         {
             name: "withdrawMethod",
             type: "list",
-            message: chalk.yellow.bold("\nSelect a Withdrawel Method.\n"),
+            message: chalk.yellow.bold("\nSelect a Withdrawal Method.\n"),
             choices: ["Fast Cash", "Enter Amount"]
         }
     ])
